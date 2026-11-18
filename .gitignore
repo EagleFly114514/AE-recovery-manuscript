@@ -1,0 +1,27 @@
+# Allow software and documentation only.
+*
+!*/
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/INPUTS.md
+!/LICENSE
+!/LICENSES.md
+!/checksums.sha256
+!/reproduce.py
+!/run_reproduction.ps1
+!/code/*.py
+!/scripts/*.py
+!/tests/*.py
+!/configs/analysis_plan.json
+!/configs/legacy_spec.json
+!/configs/antibody_codes.json
+!/configs/feature_dictionary.json
+!/environment/requirements-analysis.txt
+
+**/__pycache__/
+**/*.pyc
+.venv/
+.pytest_cache/
+.env
+.env.*

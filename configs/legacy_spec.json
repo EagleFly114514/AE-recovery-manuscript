@@ -1,0 +1,232 @@
+{
+  "history_columns": [
+    "age",
+    "female",
+    "nmdar",
+    "lgi1",
+    "multi_antibody",
+    "onset_to_admission",
+    "D1_neural_autonomic",
+    "D2_central_context",
+    "csf_available",
+    "D3_systemic_inflammation",
+    "blood_available",
+    "D4_low_reserve",
+    "course_worst_mrs",
+    "course_respiratory_failure",
+    "course_los_days",
+    "course_verified",
+    "hmax_item_consciousness_admission",
+    "hmax_item_fever_admission",
+    "hmax_item_psychiatric_admission",
+    "hmax_item_seizure_admission",
+    "hmax_item_language_admission",
+    "hmax_item_movement_admission",
+    "hmax_item_autonomic_admission",
+    "hmax_item_psh_admission",
+    "hmax_item_opening_pressure",
+    "hmax_item_csf_wbc",
+    "hmax_item_csf_mononuclear",
+    "hmax_item_csf_protein",
+    "hmax_item_wbc",
+    "hmax_item_neutrophil_percent",
+    "hmax_item_lymphocyte_percent",
+    "hmax_item_rbc",
+    "hmax_item_hemoglobin",
+    "hmax_item_platelet",
+    "hmax_consciousness_ordinal_admission",
+    "hmax_status_epilepticus_admission",
+    "course_icu",
+    "course_imv",
+    "course_icu_days",
+    "course_imv_days",
+    "hmax_course_worst_mrs_1",
+    "hmax_course_worst_mrs_2",
+    "hmax_course_worst_mrs_3",
+    "hmax_course_worst_mrs_4",
+    "hmax_course_worst_mrs_5",
+    "hmax_tx_steroid_verified",
+    "hmax_tx_steroid_known",
+    "hmax_tx_ivig_verified",
+    "hmax_tx_ivig_known",
+    "hmax_tx_plasma_exchange_verified",
+    "hmax_tx_plasma_exchange_known",
+    "hmax_tx_immunosuppressant_verified",
+    "hmax_tx_immunosuppressant_known",
+    "hmax_log1p_onset_to_t0_days",
+    "haudit_cognitive_admission",
+    "haudit_ataxia_admission"
+  ],
+  "state_columns": {
+    "dynamic": [
+      "state_group_mrs3",
+      "state_group_mrs45"
+    ],
+    "recovery": [
+      "state_group_mrs45"
+    ]
+  },
+  "domains": {
+    "D1_neural_autonomic": [
+      {
+        "key": "consciousness_admission",
+        "column": "consciousness_admission",
+        "transform": "identity",
+        "direction": 1.0
+      },
+      {
+        "key": "fever_admission",
+        "column": "fever_admission",
+        "transform": "identity",
+        "direction": 1.0
+      },
+      {
+        "key": "psychiatric_admission",
+        "column": "psychiatric_admission",
+        "transform": "identity",
+        "direction": 1.0
+      },
+      {
+        "key": "seizure_admission",
+        "column": "seizure_admission",
+        "transform": "identity",
+        "direction": 1.0
+      },
+      {
+        "key": "language_admission",
+        "column": "language_admission",
+        "transform": "identity",
+        "direction": 1.0
+      },
+      {
+        "key": "movement_admission",
+        "column": "movement_admission",
+        "transform": "identity",
+        "direction": 1.0
+      },
+      {
+        "key": "autonomic_admission",
+        "column": "autonomic_admission",
+        "transform": "identity",
+        "direction": 1.0
+      },
+      {
+        "key": "psh_admission",
+        "column": "psh_admission",
+        "transform": "identity",
+        "direction": 1.0
+      }
+    ],
+    "D2_central_context": [
+      {
+        "key": "opening_pressure",
+        "column": "opening_pressure_72",
+        "transform": "log1p",
+        "direction": 1.0
+      },
+      {
+        "key": "csf_wbc",
+        "column": "csf_wbc_72",
+        "transform": "log1p",
+        "direction": 1.0
+      },
+      {
+        "key": "csf_mononuclear",
+        "column": "csf_mononuclear_72",
+        "transform": "log1p",
+        "direction": 1.0
+      },
+      {
+        "key": "csf_protein",
+        "column": "csf_protein_72",
+        "transform": "log1p",
+        "direction": 1.0
+      }
+    ],
+    "D3_systemic_inflammation": [
+      {
+        "key": "wbc",
+        "column": "wbc_72",
+        "transform": "log1p",
+        "direction": 1.0
+      },
+      {
+        "key": "neutrophil_percent",
+        "column": "neutrophil_percent_72",
+        "transform": "identity",
+        "direction": 1.0
+      },
+      {
+        "key": "lymphocyte_percent",
+        "column": "lymphocyte_percent_72",
+        "transform": "identity",
+        "direction": -1.0
+      }
+    ],
+    "D4_low_reserve": [
+      {
+        "key": "rbc",
+        "column": "rbc_72",
+        "transform": "identity",
+        "direction": -1.0
+      },
+      {
+        "key": "hemoglobin",
+        "column": "hemoglobin_72",
+        "transform": "identity",
+        "direction": -1.0
+      },
+      {
+        "key": "platelet",
+        "column": "platelet_72",
+        "transform": "identity",
+        "direction": -1.0
+      }
+    ]
+  },
+  "coverage": 0.5,
+  "no_indicator": [
+    "D2_central_context",
+    "D3_systemic_inflammation",
+    "D4_low_reserve",
+    "course_icu",
+    "course_icu_days",
+    "course_imv",
+    "course_imv_days",
+    "course_los_days",
+    "course_respiratory_failure",
+    "course_worst_mrs",
+    "hmax_item_csf_mononuclear",
+    "hmax_item_csf_protein",
+    "hmax_item_csf_wbc",
+    "hmax_item_hemoglobin",
+    "hmax_item_lymphocyte_percent",
+    "hmax_item_neutrophil_percent",
+    "hmax_item_opening_pressure",
+    "hmax_item_platelet",
+    "hmax_item_rbc",
+    "hmax_item_wbc",
+    "hmax_tx_immunosuppressant_known",
+    "hmax_tx_immunosuppressant_verified",
+    "hmax_tx_ivig_known",
+    "hmax_tx_ivig_verified",
+    "hmax_tx_plasma_exchange_known",
+    "hmax_tx_plasma_exchange_verified",
+    "hmax_tx_steroid_known",
+    "hmax_tx_steroid_verified"
+  ],
+  "validation": {
+    "seed": 2026072701,
+    "outer_folds": 5,
+    "outer_repeats": 20,
+    "inner_folds": 4,
+    "c_grid": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0
+    ]
+  },
+  "bootstrap_draws": 2000
+}

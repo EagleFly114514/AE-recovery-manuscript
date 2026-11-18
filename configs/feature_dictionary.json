@@ -1,0 +1,338 @@
+[
+  {
+    "No.": "1",
+    "Recorded variable or constructed input": "Age at disease onset",
+    "Unit or encoding": "years",
+    "H input": "H"
+  },
+  {
+    "No.": "2",
+    "Recorded variable or constructed input": "Female sex",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "3",
+    "Recorded variable or constructed input": "NMDAR autoantibody",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "4",
+    "Recorded variable or constructed input": "LGI1 autoantibody",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "5",
+    "Recorded variable or constructed input": "Registry multiple-antibody flag",
+    "Unit or encoding": "Registry coding",
+    "H input": "No"
+  },
+  {
+    "No.": "6",
+    "Recorded variable or constructed input": "Onset-to-admission interval",
+    "Unit or encoding": "log(1 + days)",
+    "H input": "No"
+  },
+  {
+    "No.": "7",
+    "Recorded variable or constructed input": "Clinical presentation score",
+    "Unit or encoding": "Composite constructed within training folds",
+    "H input": "No"
+  },
+  {
+    "No.": "8",
+    "Recorded variable or constructed input": "Early CSF context score",
+    "Unit or encoding": "Composite constructed within training folds",
+    "H input": "No"
+  },
+  {
+    "No.": "9",
+    "Recorded variable or constructed input": "Verified CSF sampling",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "10",
+    "Recorded variable or constructed input": "Systemic inflammation score",
+    "Unit or encoding": "Composite constructed within training folds",
+    "H input": "No"
+  },
+  {
+    "No.": "11",
+    "Recorded variable or constructed input": "Verified blood-count window",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "12",
+    "Recorded variable or constructed input": "Physiological reserve score",
+    "Unit or encoding": "Composite constructed within training folds",
+    "H input": "No"
+  },
+  {
+    "No.": "13",
+    "Recorded variable or constructed input": "Worst inpatient mRS",
+    "Unit or encoding": "0–6; preceding-course timing gate",
+    "H input": "No"
+  },
+  {
+    "No.": "14",
+    "Recorded variable or constructed input": "Acute-episode respiratory failure",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "15",
+    "Recorded variable or constructed input": "Inpatient length of stay",
+    "Unit or encoding": "log(1 + days)",
+    "H input": "No"
+  },
+  {
+    "No.": "16",
+    "Recorded variable or constructed input": "Verified inpatient course",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "17",
+    "Recorded variable or constructed input": "Impaired consciousness by admission",
+    "Unit or encoding": "0/1",
+    "H input": "H"
+  },
+  {
+    "No.": "18",
+    "Recorded variable or constructed input": "Fever at disease onset",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "19",
+    "Recorded variable or constructed input": "Psychiatric symptoms by admission",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "20",
+    "Recorded variable or constructed input": "Seizure by admission",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "21",
+    "Recorded variable or constructed input": "Language impairment by admission",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "22",
+    "Recorded variable or constructed input": "Movement disorder by admission",
+    "Unit or encoding": "0/1",
+    "H input": "H"
+  },
+  {
+    "No.": "23",
+    "Recorded variable or constructed input": "Autonomic dysfunction by admission",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "24",
+    "Recorded variable or constructed input": "Paroxysmal sympathetic hyperactivity by admission",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "25",
+    "Recorded variable or constructed input": "CSF opening pressure",
+    "Unit or encoding": "mmH₂O",
+    "H input": "No"
+  },
+  {
+    "No.": "26",
+    "Recorded variable or constructed input": "CSF white-cell count",
+    "Unit or encoding": "10⁶/L",
+    "H input": "No"
+  },
+  {
+    "No.": "27",
+    "Recorded variable or constructed input": "CSF mononuclear-cell count",
+    "Unit or encoding": "10⁶/L",
+    "H input": "No"
+  },
+  {
+    "No.": "28",
+    "Recorded variable or constructed input": "CSF protein",
+    "Unit or encoding": "mg/dL",
+    "H input": "No"
+  },
+  {
+    "No.": "29",
+    "Recorded variable or constructed input": "Peripheral white-cell count",
+    "Unit or encoding": "10⁹/L",
+    "H input": "No"
+  },
+  {
+    "No.": "30",
+    "Recorded variable or constructed input": "Peripheral neutrophil percentage",
+    "Unit or encoding": "%",
+    "H input": "No"
+  },
+  {
+    "No.": "31",
+    "Recorded variable or constructed input": "Peripheral lymphocyte percentage",
+    "Unit or encoding": "%",
+    "H input": "No"
+  },
+  {
+    "No.": "32",
+    "Recorded variable or constructed input": "Red-cell count",
+    "Unit or encoding": "10¹²/L",
+    "H input": "No"
+  },
+  {
+    "No.": "33",
+    "Recorded variable or constructed input": "Haemoglobin",
+    "Unit or encoding": "g/L",
+    "H input": "No"
+  },
+  {
+    "No.": "34",
+    "Recorded variable or constructed input": "Platelet count",
+    "Unit or encoding": "10⁹/L",
+    "H input": "No"
+  },
+  {
+    "No.": "35",
+    "Recorded variable or constructed input": "Consciousness category at admission",
+    "Unit or encoding": "Registry codes 0–8",
+    "H input": "No"
+  },
+  {
+    "No.": "36",
+    "Recorded variable or constructed input": "Status epilepticus; seizure-onset proxy",
+    "Unit or encoding": "General seizure timing as admission proxy",
+    "H input": "No"
+  },
+  {
+    "No.": "37",
+    "Recorded variable or constructed input": "Recorded ICU admission",
+    "Unit or encoding": "0/1",
+    "H input": "H"
+  },
+  {
+    "No.": "38",
+    "Recorded variable or constructed input": "Invasive mechanical ventilation",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "39",
+    "Recorded variable or constructed input": "Intensive-care duration",
+    "Unit or encoding": "log(1 + days)",
+    "H input": "No"
+  },
+  {
+    "No.": "40",
+    "Recorded variable or constructed input": "Invasive-ventilation duration",
+    "Unit or encoding": "log(1 + recorded days)",
+    "H input": "No"
+  },
+  {
+    "No.": "41",
+    "Recorded variable or constructed input": "Worst inpatient mRS category 1",
+    "Unit or encoding": "Category indicator; mRS 0 reference",
+    "H input": "No"
+  },
+  {
+    "No.": "42",
+    "Recorded variable or constructed input": "Worst inpatient mRS category 2",
+    "Unit or encoding": "Category indicator; mRS 0 reference",
+    "H input": "No"
+  },
+  {
+    "No.": "43",
+    "Recorded variable or constructed input": "Worst inpatient mRS category 3",
+    "Unit or encoding": "Category indicator; mRS 0 reference",
+    "H input": "No"
+  },
+  {
+    "No.": "44",
+    "Recorded variable or constructed input": "Worst inpatient mRS category 4",
+    "Unit or encoding": "Category indicator; mRS 0 reference",
+    "H input": "No"
+  },
+  {
+    "No.": "45",
+    "Recorded variable or constructed input": "Worst inpatient mRS category 5",
+    "Unit or encoding": "Category indicator; mRS 0 reference",
+    "H input": "No"
+  },
+  {
+    "No.": "46",
+    "Recorded variable or constructed input": "Eligible corticosteroid exposure",
+    "Unit or encoding": "0/1/missing",
+    "H input": "No"
+  },
+  {
+    "No.": "47",
+    "Recorded variable or constructed input": "Corticosteroid status known",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "48",
+    "Recorded variable or constructed input": "Eligible IVIG exposure",
+    "Unit or encoding": "0/1/missing",
+    "H input": "No"
+  },
+  {
+    "No.": "49",
+    "Recorded variable or constructed input": "IVIG status known",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "50",
+    "Recorded variable or constructed input": "Eligible plasma-exchange exposure",
+    "Unit or encoding": "0/1/missing",
+    "H input": "No"
+  },
+  {
+    "No.": "51",
+    "Recorded variable or constructed input": "Plasma-exchange status known",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "52",
+    "Recorded variable or constructed input": "Eligible immunosuppressant exposure",
+    "Unit or encoding": "0/1/missing",
+    "H input": "No"
+  },
+  {
+    "No.": "53",
+    "Recorded variable or constructed input": "Immunosuppressant status known",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "54",
+    "Recorded variable or constructed input": "Onset-to-treatment interval",
+    "Unit or encoding": "log(1 + days)",
+    "H input": "H"
+  },
+  {
+    "No.": "55",
+    "Recorded variable or constructed input": "Cognitive impairment by admission",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  },
+  {
+    "No.": "56",
+    "Recorded variable or constructed input": "Ataxia by admission",
+    "Unit or encoding": "0/1",
+    "H input": "No"
+  }
+]

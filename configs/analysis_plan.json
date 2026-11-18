@@ -1,0 +1,104 @@
+{
+  "assessment_timing": {
+    "internal_development_and_temporal": "nominal six-, twelve- and twenty-four-month assessments after T0",
+    "internal_actual_visit_dates_available": false,
+    "internal_patient_level_window_verification": false,
+    "internal_icu_gate": "hospital discharge by both T0 plus 150 days and the nominal six-month landmark",
+    "internal_icu_timestamp_scope": "hospital-episode discharge gate, not individual ICU-interval adjudication"
+  },
+  "validation_protocol": {
+    "candidate_selection_data": "development_only",
+    "tuning_data": "development_only",
+    "g_selection_data_within_each_fit": "development_only",
+    "parameter_estimation_data": "development_only",
+    "selection_excludes": [
+      "temporal_results",
+      "future_multicentre_results"
+    ],
+    "freeze_before_external_validation": [
+      "model_family_and_predictors",
+      "history_update_settings",
+      "preprocessing_and_full_development_fit",
+      "evaluation_rules"
+    ],
+    "external_result_role": "Evaluate only after the development specification is frozen.",
+    "external_feedback_to_selection": false,
+    "development_refits": "repeat_development_estimation_under_the_frozen_specification",
+    "precision_reporting_rule": "The prespecified primary assessment is retained; larger runs quantify Monte Carlo uncertainty under the same specification."
+  },
+  "clinical_baseline": {
+    "name": "B",
+    "model": "additive ridge logistic regression",
+    "predictors": [
+      "age in years",
+      "six-month mRS 3 versus 0\u20132",
+      "six-month mRS 4\u20135 versus 0\u20132"
+    ],
+    "ridge_c": 1.0,
+    "training_only_preprocessing": "median fill for missing age, followed by standardisation of the three design columns",
+    "evaluation": "identical observed records, endpoint, outer splits and paired resamples as HG; fixed before running the comparison"
+  },
+  "policy": {
+    "name": "soft8_narrow_support32",
+    "base": {
+      "name": "soft8_narrow",
+      "table": {
+        "name": "soft8",
+        "cells": 8,
+        "smoothing": 0.25,
+        "prior": 512,
+        "acute": "complete_patterns",
+        "pool": "shared_boundary_change",
+        "temperature": 0.5
+      },
+      "fine": {
+        "kernel": "additive",
+        "bandwidth": 0.75,
+        "count": 64,
+        "temperature": 0.25,
+        "reference": "leave_patient_out",
+        "name": "narrow"
+      },
+      "table_family": "soft",
+      "fine_family": "local",
+      "table_weight": [
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    "prior": 32,
+    "fixed": null,
+    "gate_precision": 16
+  },
+  "populations": [
+    "overall_dynamic",
+    "nmdar_dynamic"
+  ],
+  "outer_folds": 5,
+  "outer_repeats": 20,
+  "outer_seed": 20261107121,
+  "full_fit_seed": 20261107112,
+  "primary": {
+    "development_refits": 1000,
+    "validation_patient_draws": 1000,
+    "development_seed": 20261108981,
+    "validation_patient_seed": 20261108982
+  },
+  "precision": {
+    "development_refits": 10000,
+    "validation_patient_draws": 20000,
+    "development_seed": 20261108994,
+    "validation_patient_seed": 20261108995
+  },
+  "missing": {
+    "missing_case_odds_ratios": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "reference_risk_prior_count": 2
+  }
+}
